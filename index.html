@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        /*---general---*/
+        html{ font-family: Arial, Helvetica, sans-serif; }
+        *{ margin: 0; padding: 0 }
+        :root {
+            --dark-blue: rgb(30, 0, 100);
+            --cyan-intro: rgb(0, 110, 169);
+        }
+        main{
+            margin:0 auto;
+            width: 90%;
+        }
+        ul li { list-style: none; }
+        .heading-intro { 
+            color: var(--cyan-intro);
+            font-style: italic;
+         }
+        h1, h2, h3, h4{
+            color: var(--dark-blue);
+        }
+        .left-side{
+            width: 70%;
+        }
+        .right-side{
+            width: 30%;
+        }
+        .gray-rounded-border{
+            border-radius: 5px;
+            background-color: rgb(230, 230, 240);
+        }
+        /*---header---*/
+        header *{ margin: 15px 0 15px 25px;  }
+        header h1 { padding-top: 25px; }
+        header p{ padding: 10px 0 35px 0; }
+        /*---activities-left-side---*/
+        .activity{
+            margin: 0 20px;
+        }
+        .activity h2{
+            margin: 20px 0;
+        }
+        .activity h3{
+            margin: 20px 8px;
+        }
+        .activity h4, p{
+            margin: 5px 12px;
+        }
+        .task-desc{
+            padding-bottom: 10px;
+        }
+        /*---right side---*/
+        #external-links{
+            border-radius: 5px;
+            background-color: var(--dark-blue);
+        }
+        #external-links *{ padding: 3px;}
+        a{ color: white; }
+        .right-side h3{ 
+            margin: 30px;
+            padding-top: 30px;
+        }
+        .right-side ul{
+            margin: 0 35px;
+        }
+        .right-side ul li{
+            margin: 3px;
+        }
+        .right-side p {
+            font-size: 14px;
+            margin: 0 35px 35px;
+            padding-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header class="left-side gray-rounded-border">
+            <h1>Bruno Manso</h1>
+            <h3 class="heading-intro">Web Developer</h3>
+            <p>Architecture, developing, and implementing interactive websites, as well as supporting companies' web apps and digital products.</p>
+        </header>
+        <section id="external-links" class="right-side">
+            <ul>
+                <li><a href="mailto:>bmansoweb@gmail.com">bmansoweb@gmail.com</a></li>
+                <li><a href="https://www.linkedin.com/in/bruno-manso-17120542/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.github.com/m4n50" target="_blank">GitHub</a></li>
+            </ul>
+        </section>
+        <section class="left-side">
+            <div id="work-experience" class="activity">
+                <h2>WORK EXPERIENCE</h2>
+                <article>
+                    <h3>Web Developer/Webmaster</h3>
+                    <h4>Escola de Governo em Saúde Pública de Pernambuco - ESPPE</h4>
+                    <p class="heading-intro time-duration-work">december/2013 - august/2023</p>
+                    <p class="place-of-work">School of Public Health Government</p>
+                    <p class="heading-intro task">Tasks</p>
+                    <p class="task-desc">Maintenance of the website, Web System Admin, social media image creator, Call center attendant.</p>
+                </article>
+                <article>
+                    <h3>Full Stack Web Developer</h3>
+                    <h4>Freelancer</h4>
+                    <p class="heading-intro time-duration-work">april/2007 - present</p>
+                    <p class="heading-intro task">Tasks</p>
+                    <p class="task-desc">Design, implement and support websites and web applications.</p>
+                </article>
+            </div>
+            <div id="education" class="activity">
+                <h2>EDUCATION</h2>
+                <article>
+                    <h3>Internet System Technologist</h3>
+                    <h4>UNINASSAU</h4>
+                    <p class="heading-intro time-duration-work">august/2008 - june/2011</p>
+                </article>
+            </div>
+        </section>
+        <section class="right-side gray-rounded-border">
+            <article id="tech-skills">
+                <h3>TECH SKILLS</h3>
+                <ul>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>Spring</li>
+                    <li>Spring Boot</li>
+                    <li>React</li>
+                    <li>NodeJS</li>
+                    <li>PostgreSQL</li>
+                    <li>MySQL</li>
+                    <li>MongoDB</li>
+                    <li>Docker</li>
+                    <li>Kubernetes</li>
+                    <li>AWS</li>
+                    <li>Azure</li>
+                </ul>
+            </article>
+            <article id="languages">
+                <h3>LANGUAGES</h3>
+                <ul>
+                    <li class="heading-intro">Portuguese - native</li>
+                    <li class="heading-intro">English - professional proficiency</li>
+                </ul>
+
+            </article>
+            <article id="interests">
+                <h3>INTERESTS</h3>
+                <p>Web Development, Cloud solutions, E-commerce, Web 3.0.</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
