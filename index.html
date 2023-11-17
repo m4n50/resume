@@ -14,13 +14,18 @@
             --clear-gray: rgb(230, 230, 240);
         }
         main{
-            margin:0 auto;
-            width: 90%;
+            margin: auto;
+            width: 96%;
         }
-        ul{ display: flex;}
+        ul{ 
+            width: 60%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            gap: 3px;
+        }
         ul li { 
             list-style: none; 
-            padding-right: 10px;
+            text-align: center;
         }
         .heading-intro { 
             color: var(--cyan-intro);
@@ -75,13 +80,14 @@
             background-color: rgba(50, 50, 50, .5);
             color: white;
             padding: 5px;
+            margin: 5px;
         }
         #languages p{
             margin: 10px 35px;
         }
         #interests p{
             margin: 0 35px 35px;
-            padding-bottom: 40px;
+            padding-bottom: 60px;
         }
     </style>
 </head>
@@ -104,9 +110,8 @@
                 <h2>WORK EXPERIENCE</h2>
                 <article>
                     <h3>Web Developer/Webmaster</h3>
-                    <h4>Escola de Governo em Saúde Pública de Pernambuco - ESPPE</h4>
+                    <h4>School of Public Health Government of Pernambuco State- ESPPE</h4>
                     <p class="heading-intro time-duration-work">december/2013 - august/2023</p>
-                    <p class="place-of-work">School of Public Health Government</p>
                     <p class="heading-intro task">Tasks</p>
                     <p class="task-desc">Maintenance of the website, Web System Admin, social media image creator, Call center attendant.</p>
                 </article>
