@@ -11,12 +11,17 @@
         :root {
             --dark-blue: rgb(30, 0, 100);
             --cyan-intro: rgb(0, 110, 169);
+            --clear-gray: rgb(230, 230, 240);
         }
         main{
             margin:0 auto;
             width: 90%;
         }
-        ul li { list-style: none; }
+        ul{ display: flex;}
+        ul li { 
+            list-style: none; 
+            padding-right: 10px;
+        }
         .heading-intro { 
             color: var(--cyan-intro);
             font-style: italic;
@@ -24,20 +29,14 @@
         h1, h2, h3, h4{
             color: var(--dark-blue);
         }
-        .left-side{
-            
-        }
-        .right-side{
-            
-        }
         .gray-rounded-border{
             border-radius: 5px;
-            background-color: rgb(230, 230, 240);
+            background-color: var(--clear-gray);
         }
         /*---header---*/
         header *{ margin: 15px 0 15px 25px;  }
         header h1 { padding-top: 25px; }
-        header p{ padding: 10px 0 35px 0; }
+        header p{ padding: 10px 0 35px 15px; }
         /*---activities-left-side---*/
         .activity{
             margin: 0 20px;
@@ -71,8 +70,16 @@
         .right-side ul li{
             margin: 3px;
         }
-        .right-side p {
-            font-size: 14px;
+        #tech-skills li{
+            border-radius: 2px;
+            background-color: rgba(50, 50, 50, .5);
+            color: white;
+            padding: 5px;
+        }
+        #languages p{
+            margin: 10px 35px;
+        }
+        #interests p{
             margin: 0 35px 35px;
             padding-bottom: 40px;
         }
@@ -141,11 +148,8 @@
             </article>
             <article id="languages">
                 <h3>LANGUAGES</h3>
-                <ul>
-                    <li class="heading-intro">Portuguese - native</li>
-                    <li class="heading-intro">English - professional proficiency</li>
-                </ul>
-
+                <p class="heading-intro">Portuguese - native</p>
+                <p class="heading-intro">English - professional proficiency</p>
             </article>
             <article id="interests">
                 <h3>INTERESTS</h3>
